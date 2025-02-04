@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #f6f8fc;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            width: 110px;
+            margin-left: 10px;
+        }
+        .search-bar {
+            margin-left: 30px;
+            padding: 8px;
+            width: 400px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .email-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .email-item {
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+        }
+        .email-item:hover {
+            background-color: #f6f8fc;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .sender {
+            font-weight: bold;
+        }
+        .subject {
+            margin-left: 10px;
+        }
+        .date {
+            float: right;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_92x30dp.png" alt="Gmail" class="logo">
+        <input type="text" placeholder="Search mail" class="search-bar">
+    </div>
+
+    <ul class="email-list">
+        <li class="email-item" onclick="openEmail()">
+            <span class="sender">Telegram</span>
+            <span class="subject">Your Code - 69363</span>
+            <span class="date">Feb 2</span>
+        </li>
+        <li class="email-item">
+            <span class="sender">LinkedIn</span>
+            <span class="subject">New connection request</span>
+            <span class="date">Feb 1</span>
+        </li>
+        <li class="email-item">
+            <span class="sender">GitHub</span>
+            <span class="subject">Security alert</span>
+            <span class="date">Jan 31</span>
+        </li>
+        <li class="email-item">
+            <span class="sender">Netflix</span>
+            <span class="subject">New shows added to your list</span>
+            <span class="date">Jan 30</span>
+        </li>
+    </ul>
+
+    <script>
+        function openEmail() {
+            window.location.href = 'email.html';
+        }
+    </script>
+</body>
+</html> 
